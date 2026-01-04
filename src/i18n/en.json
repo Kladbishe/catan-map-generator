@@ -10,6 +10,11 @@
     "subtitle": "Create random or preset game boards",
     "startButton": "Start Generating"
   },
+  "firstPage": {
+    "generateMap": "Generate Map",
+    "rules": "Rules",
+    "setup": "Setup"
+  },
   "generator": {
     "title": "Map Generator",
     "settings": "Settings",
@@ -48,7 +53,9 @@
     "setup": "Setup",
     "gameplay": "Gameplay",
     "resources": "Resources",
-    "buildings": "Buildings"
+    "buildings": "Buildings",
+    "downloadPdf": "Download PDF",
+    "printPdf": "Print PDF"
   },
   "language": {
     "label": "Language",

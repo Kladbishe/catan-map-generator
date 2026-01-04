@@ -10,6 +10,11 @@
     "subtitle": "צור לוחות משחק אקראיים או קבועים",
     "startButton": "התחל ליצור"
   },
+  "firstPage": {
+    "generateMap": "צור מפה",
+    "rules": "חוקים",
+    "setup": "הגדרות"
+  },
   "generator": {
     "title": "מחולל מפות",
     "settings": "הגדרות",
@@ -48,7 +53,9 @@
     "setup": "הכנה",
     "gameplay": "מהלך המשחק",
     "resources": "משאבים",
-    "buildings": "מבנים"
+    "buildings": "מבנים",
+    "downloadPdf": "הורד PDF",
+    "printPdf": "הדפס PDF"
   },
   "language": {
     "label": "שפה",

@@ -10,6 +10,11 @@
     "subtitle": "Создавайте случайные или стандартные игровые поля",
     "startButton": "Начать генерацию"
   },
+  "firstPage": {
+    "generateMap": "Создать карту",
+    "rules": "Правила",
+    "setup": "Настройки"
+  },
   "generator": {
     "title": "Генератор карт",
     "settings": "Настройки",
@@ -48,7 +53,9 @@
     "setup": "Подготовка",
     "gameplay": "Игровой процесс",
     "resources": "Ресурсы",
-    "buildings": "Постройки"
+    "buildings": "Постройки",
+    "downloadPdf": "Скачать PDF",
+    "printPdf": "Напечатать PDF"
   },
   "language": {
     "label": "Язык",

@@ -8,7 +8,7 @@ const pdfFiles: Record<string, string> = {
 };
 
 export default function Rules() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const lang: string = i18n.language;
   const pdfToShow: string = pdfFiles[lang] || pdfFiles["en"];
 
@@ -23,13 +23,13 @@ export default function Rules() {
 
       <div className="Rules-buttons">
         <a href={pdfToShow} download>
-          <button className="Rules-btn">Download PDF</button>
+          <button className="Rules-btn">{t("rules.downloadPdf")}</button>
         </a>
         <button
           className="Rules-btn"
           onClick={() => window.open(pdfToShow, "_blank")}
         >
-          Print PDF
+          {t("rules.printPdf")}
         </button>
       </div>
     </div>
