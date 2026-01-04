@@ -43,8 +43,9 @@ export default function Header() {
         <header className='Header'>
             <div className='header-content'>
                 <Link to="/" className='logo'>
-                    <span className='logo-icon'></span>
-                    <span className='logo-text'>Catan Generator</span>
+                    <span className='logo-icon'>
+                        <img src="/assets/logo.png" alt="Catan Generator Logo" />
+                    </span>
                 </Link>
 
                 <div className='language-dropdown' ref={dropdownRef}>

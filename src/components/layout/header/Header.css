@@ -1,45 +1,41 @@
-/* Header.css - Mobile First - темные цвета Catan */
+/* Header.css - Mobile First */
 
-/* Базовый хедер */
 .Header {
-    background-color: #b03a2e; /* темно-терракотовый */
-    color: #fdf5e6; /* светлый песочный текст */
+    background-color: #8b4513;
+    color: #f5e3d3;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px; /* высота всего хедера */
+    height: 60px;
     padding: 0 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.25);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Контейнер контента */
 .header-content {
     display: flex;
-    justify-content: space-between; /* логотип слева, кнопки справа */
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     position: relative;
-    height: 45px; /* фиксированная высота */
+    height: 45px;
     padding: 0 1rem;
 }
 
-/* Контейнер для логотипа */
 .logo-container {
     display: flex;
     align-items: center;
-    flex: 0 0 auto; /* не растягиваем */
+    flex: 0 0 auto;
     height: 100%;
 }
 
-/* Лого */
 .logo {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    color: #fdf5e6;
+    color: #f5e3d3;
     font-weight: 700;
     font-size: 1rem;
     transition: opacity 0.2s;
@@ -50,63 +46,73 @@
 
 .logo:hover {
     opacity: 0.85;
-    color: #fdf5e6;
+    color: #f5e3d3;
 }
 
 .logo:visited {
-    color: #fdf5e6;
+    color: #f5e3d3;
 }
 
-/* Лого картинка или SVG */
 .logo img,
 .logo svg {
-    height: 100%; /* масштабируем под высоту родителя */
-    width: auto;  /* сохраняем пропорции */
+    height: 100%;
+    width: auto;
     display: block;
 }
 
 .logo-icon {
     font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .logo-text {
     white-space: nowrap;
 }
 
-/* Контейнер для кнопок */
 .actions-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    flex: 0 0 auto; /* не растягиваем */
+    flex: 0 0 auto;
 }
 
-/* Языковой селектор */
 .language-dropdown {
-    position: relative;
+    position: absolute;
+    right: 1rem;
 }
 
 .lang-button {
-    background-color: #d35400;
-    border: 1px solid #b03a2e;
-    color: #fdf5e6;
-    padding: 0.3rem 0.6rem;
+    background-color: #a0522d;
+    border: 2px solid #704214;
+    color: #f5e3d3;
+    padding: 0.4rem;
     border-radius: 0.3rem;
     font-size: 0.85rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lang-button:hover {
-    background-color: #e67e22;
+    background-color: #b8733d;
 }
 
 .lang-button:active {
     transform: scale(0.95);
 }
 
-/* Меню языков */
 .lang-menu {
     position: absolute;
     top: calc(100% + 0.25rem);
@@ -149,7 +155,7 @@
     background-color: #6e2f1f;
 }
 
-/* Tablet - 600px и выше */
+/* Tablet */
 @media (min-width: 600px) {
     .Header {
         height: 4rem;
@@ -169,7 +175,8 @@
 
     .lang-button {
         font-size: 0.9rem;
-        padding: 0.35rem 0.7rem;
+        width: 2.4rem;
+        height: 2.4rem;
     }
 
     .lang-menu {
@@ -182,7 +189,7 @@
     }
 }
 
-/* Desktop - 1024px и выше */
+/* Desktop */
 @media (min-width: 1024px) {
     .Header {
         height: 4.5rem;
@@ -202,7 +209,8 @@
 
     .lang-button {
         font-size: 1rem;
-        padding: 0.4rem 0.85rem;
+        width: 2.6rem;
+        height: 2.6rem;
     }
 
     .lang-menu {
