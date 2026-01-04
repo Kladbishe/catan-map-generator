@@ -1,0 +1,216 @@
+/* Header.css - Mobile First - темные цвета Catan */
+
+/* Базовый хедер */
+.Header {
+    background-color: #b03a2e; /* темно-терракотовый */
+    color: #fdf5e6; /* светлый песочный текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* высота всего хедера */
+    padding: 0 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.25);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Контейнер контента */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* логотип слева, кнопки справа */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    height: 45px; /* фиксированная высота */
+    padding: 0 1rem;
+}
+
+/* Контейнер для логотипа */
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto; /* не растягиваем */
+    height: 100%;
+}
+
+/* Лого */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #fdf5e6;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+    height: auto;
+    flex-shrink: 0;
+    padding: 0.5rem;
+}
+
+.logo:hover {
+    opacity: 0.85;
+    color: #fdf5e6;
+}
+
+.logo:visited {
+    color: #fdf5e6;
+}
+
+/* Лого картинка или SVG */
+.logo img,
+.logo svg {
+    height: 100%; /* масштабируем под высоту родителя */
+    width: auto;  /* сохраняем пропорции */
+    display: block;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    white-space: nowrap;
+}
+
+/* Контейнер для кнопок */
+.actions-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 auto; /* не растягиваем */
+}
+
+/* Языковой селектор */
+.language-dropdown {
+    position: relative;
+}
+
+.lang-button {
+    background-color: #d35400;
+    border: 1px solid #b03a2e;
+    color: #fdf5e6;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.lang-button:hover {
+    background-color: #e67e22;
+}
+
+.lang-button:active {
+    transform: scale(0.95);
+}
+
+/* Меню языков */
+.lang-menu {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    right: 0;
+    background-color: #f5e3d3;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25);
+    min-width: 90px;
+    overflow: hidden;
+}
+
+.lang-menu button {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #4d2c1b;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.lang-menu button:hover {
+    background-color: #e0bfa0;
+}
+
+.lang-menu button:active {
+    background-color: #d6a67a;
+}
+
+.lang-menu button.active {
+    background-color: #873e23;
+    color: #fdf5e6;
+}
+
+.lang-menu button.active:hover {
+    background-color: #6e2f1f;
+}
+
+/* Tablet - 600px и выше */
+@media (min-width: 600px) {
+    .Header {
+        height: 4rem;
+    }
+
+    .header-content {
+        height: 45px;
+    }
+
+    .logo-icon {
+        font-size: 1.7rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .lang-button {
+        font-size: 0.9rem;
+        padding: 0.35rem 0.7rem;
+    }
+
+    .lang-menu {
+        min-width: 100px;
+    }
+
+    .lang-menu button {
+        font-size: 0.9rem;
+        padding: 0.7rem 0.9rem;
+    }
+}
+
+/* Desktop - 1024px и выше */
+@media (min-width: 1024px) {
+    .Header {
+        height: 4.5rem;
+    }
+
+    .header-content {
+        height: 45px;
+    }
+
+    .logo-icon {
+        font-size: 1.9rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .lang-button {
+        font-size: 1rem;
+        padding: 0.4rem 0.85rem;
+    }
+
+    .lang-menu {
+        min-width: 110px;
+    }
+
+    .lang-menu button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+}

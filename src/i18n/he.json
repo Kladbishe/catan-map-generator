@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "בית",
+    "generator": "מחולל",
+    "rules": "חוקים",
+    "about": "אודות"
+  },
+  "home": {
+    "title": "מחולל מפות קטאן",
+    "subtitle": "צור לוחות משחק אקראיים או קבועים",
+    "startButton": "התחל ליצור"
+  },
+  "generator": {
+    "title": "מחולל מפות",
+    "settings": "הגדרות",
+    "mode": {
+      "label": "מצב יצירה",
+      "random": "מפה אקראית",
+      "preset": "הגדרה סטנדרטית"
+    },
+    "expansion": {
+      "label": "גרסת המשחק",
+      "base": "משחק בסיס",
+      "seafarers": "ימאים"
+    },
+    "players": {
+      "label": "מספר שחקנים",
+      "3": "3 שחקנים",
+      "4": "4 שחקנים",
+      "5": "5-6 שחקנים"
+    },
+    "preset": {
+      "label": "בחר תבנית",
+      "beginner4": "מתחילים - 4 שחקנים",
+      "beginner3": "מתחילים - 3 שחקנים",
+      "newShores": "חופים חדשים",
+      "oceania": "אוקיאניה"
+    },
+    "generateButton": "צור מפה",
+    "regenerateButton": "צור מפה חדשה",
+    "saveButton": "שמור מפה",
+    "printButton": "הדפס"
+  },
+  "rules": {
+    "title": "חוקי המשחק",
+    "baseGame": "חוקי המשחק הבסיסי",
+    "seafarers": "חוקי הימאים",
+    "setup": "הכנה",
+    "gameplay": "מהלך המשחק",
+    "resources": "משאבים",
+    "buildings": "מבנים"
+  },
+  "language": {
+    "label": "שפה",
+    "en": "אנגלית",
+    "ru": "רוסית",
+    "he": "עברית"
+  },
+  "common": {
+    "loading": "טוען...",
+    "error": "שגיאה",
+    "close": "סגור",
+    "cancel": "בטל",
+    "confirm": "אשר"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "generator": "Generator",
+    "rules": "Rules",
+    "about": "About"
+  },
+  "home": {
+    "title": "Catan Map Generator",
+    "subtitle": "Create random or preset game boards",
+    "startButton": "Start Generating"
+  },
+  "generator": {
+    "title": "Map Generator",
+    "settings": "Settings",
+    "mode": {
+      "label": "Generation Mode",
+      "random": "Random Map",
+      "preset": "Standard Setup"
+    },
+    "expansion": {
+      "label": "Game Version",
+      "base": "Base Game",
+      "seafarers": "Seafarers"
+    },
+    "players": {
+      "label": "Number of Players",
+      "3": "3 Players",
+      "4": "4 Players",
+      "5": "5-6 Players"
+    },
+    "preset": {
+      "label": "Choose Preset",
+      "beginner4": "Beginner - 4 Players",
+      "beginner3": "Beginner - 3 Players",
+      "newShores": "New Shores",
+      "oceania": "Oceania"
+    },
+    "generateButton": "Generate Map",
+    "regenerateButton": "Generate New Map",
+    "saveButton": "Save Map",
+    "printButton": "Print"
+  },
+  "rules": {
+    "title": "Game Rules",
+    "baseGame": "Base Game Rules",
+    "seafarers": "Seafarers Rules",
+    "setup": "Setup",
+    "gameplay": "Gameplay",
+    "resources": "Resources",
+    "buildings": "Buildings"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ru": "Russian",
+    "he": "Hebrew"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  }
+}
