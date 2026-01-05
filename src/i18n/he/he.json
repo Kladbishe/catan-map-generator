@@ -1,0 +1,11 @@
+{
+  "firstPage": {
+    "generateMap": "צור מפה",
+    "rules": "חוקים",
+    "setup": "הגדרות"
+  },
+  "rules": {
+    "downloadPdf": "הורד PDF",
+    "printPdf": "הדפס PDF"
+  }
+}

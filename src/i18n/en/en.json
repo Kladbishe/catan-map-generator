@@ -1,0 +1,11 @@
+{
+  "firstPage": {
+    "generateMap": "Generate Map",
+    "rules": "Rules",
+    "setup": "Setup"
+  },
+  "rules": {
+    "downloadPdf": "Download PDF",
+    "printPdf": "Print PDF"
+  }
+}

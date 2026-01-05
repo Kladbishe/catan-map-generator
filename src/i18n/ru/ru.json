@@ -1,0 +1,11 @@
+{
+  "firstPage": {
+    "generateMap": "Создать карту",
+    "rules": "Правила",
+    "setup": "Настройки"
+  },
+  "rules": {
+    "downloadPdf": "Скачать PDF",
+    "printPdf": "Напечатать PDF"
+  }
+}
