@@ -1,12 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { useState, useEffect, useRef } from 'react'
 import './Header.css'
 
 export default function Header() {
     const { i18n } = useTranslation()
-    const [isLangOpen, setIsLangOpen] = useState(false)
-    const dropdownRef = useRef<HTMLDivElement>(null)
 
     const languages = [
         { code: 'en', name: 'EN' },
@@ -16,28 +13,11 @@ export default function Header() {
 
     const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0]
 
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng)
-        setIsLangOpen(false)
+    const toggleLanguage = () => {
+        const currentIndex = languages.findIndex(lang => lang.code === i18n.language)
+        const nextIndex = (currentIndex + 1) % languages.length
+        i18n.changeLanguage(languages[nextIndex].code)
     }
-
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-                setIsLangOpen(false)
-            }
-        }
-
-        if (isLangOpen) {
-            setTimeout(() => {
-                document.addEventListener('mousedown', handleClickOutside)
-            }, 0)
-        }
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
-    }, [isLangOpen])
 
     return (
         <header className='Header'>
@@ -48,27 +28,13 @@ export default function Header() {
                     </span>
                 </Link>
 
-                <div className='language-dropdown' ref={dropdownRef}>
+                <div className='language-dropdown'>
                     <button
                         className='lang-button'
-                        onClick={() => setIsLangOpen(!isLangOpen)}
+                        onClick={toggleLanguage}
                     >
                         {currentLang.name}
                     </button>
-
-                    {isLangOpen && (
-                        <div className='lang-menu'>
-                            {languages.map(lang => (
-                                <button
-                                    key={lang.code}
-                                    onClick={() => changeLanguage(lang.code)}
-                                    className={i18n.language === lang.code ? 'active' : ''}
-                                >
-                                    {lang.name}
-                                </button>
-                            ))}
-                        </div>
-                    )}
                 </div>
             </div>
         </header>

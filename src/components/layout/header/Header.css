@@ -113,48 +113,6 @@
     transform: scale(0.95);
 }
 
-.lang-menu {
-    position: absolute;
-    top: calc(100% + 0.25rem);
-    right: 0;
-    background-color: #f5e3d3;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25);
-    min-width: 90px;
-    overflow: hidden;
-}
-
-.lang-menu button {
-    display: block;
-    width: 100%;
-    background: transparent;
-    border: none;
-    color: #4d2c1b;
-    padding: 0.6rem 0.8rem;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 0.85rem;
-    transition: background-color 0.2s;
-}
-
-.lang-menu button:hover {
-    background-color: #e0bfa0;
-}
-
-.lang-menu button:active {
-    background-color: #d6a67a;
-}
-
-.lang-menu button.active {
-    background-color: #873e23;
-    color: #fdf5e6;
-}
-
-.lang-menu button.active:hover {
-    background-color: #6e2f1f;
-}
-
 /* Tablet */
 @media (min-width: 600px) {
     .Header {
@@ -177,15 +135,6 @@
         font-size: 0.9rem;
         width: 2.4rem;
         height: 2.4rem;
-    }
-
-    .lang-menu {
-        min-width: 100px;
-    }
-
-    .lang-menu button {
-        font-size: 0.9rem;
-        padding: 0.7rem 0.9rem;
     }
 }
 
@@ -211,14 +160,5 @@
         font-size: 1rem;
         width: 2.6rem;
         height: 2.6rem;
-    }
-
-    .lang-menu {
-        min-width: 110px;
-    }
-
-    .lang-menu button {
-        font-size: 1rem;
-        padding: 0.75rem 1rem;
     }
 }
