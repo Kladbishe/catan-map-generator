@@ -2,7 +2,8 @@
   "firstPage": {
     "generateMap": "Создать карту",
     "rules": "Правила",
-    "setup": "Настройки"
+    "setup": "Настройки",
+    "titleCarousel":"Кол-во игроков"
   },
   "rules": {
     "downloadPdf": "Скачать PDF",

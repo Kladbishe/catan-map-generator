@@ -2,7 +2,8 @@
   "firstPage": {
     "generateMap": "Generate Map",
     "rules": "Rules",
-    "setup": "Setup"
+    "setup": "Setup",
+    "titleCarousel": "Number of players"
   },
   "rules": {
     "downloadPdf": "Download PDF",

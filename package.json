@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "embla-carousel-react": "^8.6.0",
     "i18next": "^25.7.3",
     "i18next-browser-languagedetector": "^8.2.0",
     "react": "^19.2.0",
@@ -30,5 +31,8 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4"
+  },
+  "overrides": {
+    "glob": "11.1.0"
   }
 }
