@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import './carousel.css'
+import './Carousel.css'
 
 interface CarouselProps {
   slides: ReactNode[];

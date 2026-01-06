@@ -7,11 +7,11 @@ export default function FirstPage() {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const versionSelector =[
-    { id: '1', title: t("firstPage.games.basic.titleCarousel"),subtitle: t("firstPage.games.basic.subtitle"),description: t("firstPage.games.basic.description") ,img: '/public/assets/versionGame/bases-1-4.webp' },
-    { id: '2', title: t("firstPage.games.basicStandardExtension.titleCarousel"),subtitle: t("firstPage.games.basicStandardExtension.subtitle"),description: t("firstPage.games.basicStandardExtension.description"), img: '/public/assets/versionGame/bases+players5-6.webp' },
-    { id: '3', title: t("firstPage.games.seafarers.titleCarousel"),subtitle: t("firstPage.games.seafarers.subtitle"),description: t("firstPage.games.seafarers.description"), img: '/public/assets/versionGame/bases-1-4.webp' },
-    { id: '4', title: t("firstPage.games.seafarersExtension.titleCarousel"),subtitle: t("firstPage.games.seafarersExtension.subtitle"),description: t("firstPage.games.seafarersExtension.description"), img: '/public/assets/versionGame/bases-1-4.webp' }
-  
+    { id: '1', title: t("firstPage.games.basic.titleCarousel"),subtitle: t("firstPage.games.basic.subtitle"),description: t("firstPage.games.basic.description") ,img: '/assets/versionGame/bases-1-4.webp' },
+    { id: '2', title: t("firstPage.games.basicStandardExtension.titleCarousel"),subtitle: t("firstPage.games.basicStandardExtension.subtitle"),description: t("firstPage.games.basicStandardExtension.description"), img: '/assets/versionGame/bases+players5-6.webp' },
+    { id: '3', title: t("firstPage.games.seafarers.titleCarousel"),subtitle: t("firstPage.games.seafarers.subtitle"),description: t("firstPage.games.seafarers.description"), img: '/assets/versionGame/bases-1-4.webp' },
+    { id: '4', title: t("firstPage.games.seafarersExtension.titleCarousel"),subtitle: t("firstPage.games.seafarersExtension.subtitle"),description: t("firstPage.games.seafarersExtension.description"), img: '/assets/versionGame/bases-1-4.webp' }
+
   ]
 
 
