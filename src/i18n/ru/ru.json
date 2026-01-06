@@ -28,6 +28,9 @@
   },
   "rules": {
     "downloadPdf": "Скачать PDF",
-    "printPdf": "Напечатать PDF"
+    "printPdf": "Напечатать PDF",
+    "openPdf": "Открыть PDF",
+    "mobileTitle": "Просмотр правил",
+    "mobileMessage": "Для лучшего просмотра PDF на мобильном устройстве нажмите кнопку \"Открыть PDF\" ниже"
   }
 }

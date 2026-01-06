@@ -28,6 +28,9 @@
   },
   "rules": {
     "downloadPdf": "הורד PDF",
-    "printPdf": "הדפס PDF"
+    "printPdf": "הדפס PDF",
+    "openPdf": "פתח PDF",
+    "mobileTitle": "צפייה בחוקים",
+    "mobileMessage": "לצפייה טובה יותר ב-PDF במכשיר נייד, הקש על כפתור \"פתח PDF\" למטה"
   }
 }

@@ -28,6 +28,9 @@
   },
   "rules": {
     "downloadPdf": "Download PDF",
-    "printPdf": "Print PDF"
+    "printPdf": "Print PDF",
+    "openPdf": "Open PDF",
+    "mobileTitle": "View Rules",
+    "mobileMessage": "For better PDF viewing on mobile, tap the \"Open PDF\" button below"
   }
 }
