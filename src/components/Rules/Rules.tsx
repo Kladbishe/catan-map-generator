@@ -1,15 +1,17 @@
 import { useTranslation } from "react-i18next";
 import "./Rules.css";
 
-const pdfFiles: Record<string, string> = {
-  en: "/assets/rules/manual_en.pdf",
-  ru: "/assets/rules/manual_ru.pdf",
-  he: "/assets/rules/manual_he.pdf",
-};
-
 export default function Rules() {
   const { i18n, t } = useTranslation();
   const lang: string = i18n.language;
+  const baseUrl = import.meta.env.BASE_URL;
+
+  const pdfFiles: Record<string, string> = {
+    en: `${baseUrl}assets/rules/manual_en.pdf`,
+    ru: `${baseUrl}assets/rules/manual_ru.pdf`,
+    he: `${baseUrl}assets/rules/manual_he.pdf`,
+  };
+
   const pdfToShow: string = pdfFiles[lang] || pdfFiles["en"];
 
   return (
