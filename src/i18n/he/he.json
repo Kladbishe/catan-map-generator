@@ -3,7 +3,28 @@
     "generateMap": "צור מפה",
     "rules": "חוקים",
     "setup": "הגדרות",
-    "titleCarousel": "מספר שחקנים"
+    "games": {
+      "basic": {
+        "titleCarousel": "Catan — מתיישבי קטאן",
+        "subtitle": "גרסה בסיסית ל-3–4 שחקנים",
+        "description": "משחק קלאסי עם לוח משחק סטנדרטי. מתאים לרוב המשחקים ושחקנים חדשים."
+      },
+      "basicStandardExtension": {
+        "titleCarousel": "Catan — מתיישבי קטאן עם הרחבה",
+        "subtitle": "גרסת הרחבה ל-5–6 שחקנים",
+        "description": "לוח משחק מורחב ורכיבים נוספים למשחק עם קבוצה גדולה."
+      },
+      "seafarers": {
+        "titleCarousel": "Catan — ימאים",
+        "subtitle": "הרחבה למשחק הבסיס ל-3–4 שחקנים",
+        "description": "מוסיף מסלולי ים, איים ותרחישים חדשים, מרחיב את אפשרויות המשחק הבסיסי."
+      },
+      "seafarersExtension": {
+        "titleCarousel": "Catan — ימאים עם הרחבה",
+        "subtitle": "הרחבה למשחק הבסיס ל-5–6 שחקנים",
+        "description": "גרסה מלאה של ימאים עם לוח מורחב ותמיכה עד שישה שחקנים."
+      }
+    }
   },
   "rules": {
     "downloadPdf": "הורד PDF",
