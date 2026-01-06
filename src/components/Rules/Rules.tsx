@@ -16,12 +16,13 @@ export default function Rules() {
 
   return (
     <div className="Rules">
-      <iframe
-        src={pdfToShow}
-        className="Rules-frame"
-        title="Rules PDF"
-        style={{ width: "100%", height: "80vh", border: "none" }}
-      ></iframe>
+      <div className="Rules-iframe-container">
+        <iframe
+          src={`${pdfToShow}#toolbar=1&navpanes=0&scrollbar=1`}
+          className="Rules-frame"
+          title="Rules PDF"
+        ></iframe>
+      </div>
 
       <div className="Rules-buttons">
         <a href={pdfToShow} download>
