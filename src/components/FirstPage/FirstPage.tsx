@@ -35,7 +35,7 @@ export default function FirstPage() {
         <Carousel slides={mapSlides} />
       </div>
       <div className="content">
-        <button className="generate-btn">{t("firstPage.generateMap")}</button>
+        <button className="generate-btn" onClick={() => navigate("/generatorMap")}>{t("firstPage.generateMap")}</button>
       </div>
 
       <div className="bottom-buttons">

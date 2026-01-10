@@ -1,0 +1,36 @@
+{
+  "firstPage": {
+    "generateMap": "Generate Map",
+    "rules": "Rules",
+    "setup": "Setup",
+    "games": {
+      "basic": {
+        "titleCarousel": "Catan — Settlers",
+        "subtitle": "Basic version for 3–4 players",
+        "description": "Classic game with standard game board. Suitable for most games and new players."
+      },
+      "basicStandardExtension": {
+        "titleCarousel": "Catan — Settlers with Extension",
+        "subtitle": "Extension version for 5–6 players",
+        "description": "Enlarged game board and additional components for playing with a large group."
+      },
+      "seafarers": {
+        "titleCarousel": "Catan — Seafarers",
+        "subtitle": "Expansion for the base game for 3–4 players",
+        "description": "Adds sea routes, islands and new scenarios, expanding the base game possibilities."
+      },
+      "seafarersExtension": {
+        "titleCarousel": "Catan — Seafarers with Extension",
+        "subtitle": "Expansion for the base game for 5–6 players",
+        "description": "Full version of Seafarers with enlarged board and support for up to six players."
+      }
+    }
+  },
+  "rules": {
+    "downloadPdf": "Download PDF",
+    "printPdf": "Print PDF",
+    "openPdf": "Open PDF",
+    "mobileTitle": "View Rules",
+    "mobileMessage": "For better PDF viewing on mobile, tap the \"Open PDF\" button below"
+  }
+}

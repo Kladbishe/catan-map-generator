@@ -37,16 +37,20 @@ export default function Rules() {
             src={`${pdfToShow}#toolbar=1&navpanes=0&scrollbar=1`}
             className="Rules-frame"
             title="Rules PDF"
-          ></iframe>
+          />
         </div>
       )}
 
       <div className="Rules-buttons">
         <a href={pdfToShow} target="_blank" rel="noopener noreferrer">
-          <button className="Rules-btn Rules-btn-primary">{t("rules.openPdf")}</button>
+          <button className="Rules-btn">
+            {t("rules.openPdf")}
+          </button>
         </a>
         <a href={pdfToShow} download>
-          <button className="Rules-btn">{t("rules.downloadPdf")}</button>
+          <button className="Rules-btn">
+            {t("rules.downloadPdf")}
+          </button>
         </a>
       </div>
     </div>
