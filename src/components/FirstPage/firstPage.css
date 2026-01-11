@@ -1,13 +1,12 @@
+@import '../../styles/common.css';
 
 .FirstPage {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: linear-gradient(135deg, #f5f0e1 0%, #e8dcc4 100%);
   box-sizing: border-box;
   padding: 2rem 1rem;
 }
-
 
 .map-card {
   display: flex;
@@ -30,8 +29,6 @@
   letter-spacing: 0.08em;
   margin: 0 0 0.4rem 0;
   line-height: 1.1;
-  direction: rtl;
-  unicode-bidi: isolate;
 }
 
 .map-card h5 {
@@ -41,22 +38,16 @@
   margin: 0 0 0.5rem 0;
   line-height: 1.3;
   letter-spacing: 0.02em;
-  direction: rtl;
-  unicode-bidi: isolate;
 }
 
 .map-card p {
   color: rgb(90, 74, 58);
   font-size: clamp(0.9rem, 2.5vw, 1.05rem);
-  font-weight: 400;
   line-height: 1.5;
   margin: 0;
   opacity: 0.9;
   max-width: 85%;
-  direction: rtl;
-  unicode-bidi: isolate;
 }
-
 
 .content {
   flex: 1;
@@ -69,34 +60,14 @@
   padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }
 
-
 .generate-btn {
   width: 100%;
   max-width: min(400px, 90vw);
-  padding: 0.75rem 0.5rem;
   font-size: clamp(1.2rem, 4vw, 1.5rem);
   font-weight: 700;
-  border: 2px solid #d35400;
-  border-radius: 1rem;
-  cursor: pointer;
-  background-color: transparent;
-  color: #d35400;
-  transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-
-.generate-btn:hover {
-  background-color: #d35400;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(211, 84, 0, 0.3);
-}
-
-.generate-btn:active {
-  transform: translateY(0);
-}
-
 
 .bottom-buttons {
   display: flex;
@@ -108,43 +79,5 @@
 
 .bottom-buttons button {
   flex: 1;
-  padding: 0.75rem 0.5rem;
   font-size: clamp(0.9rem, 3.5vw, 1.1rem);
-  font-weight: 600;
-  border: 2px solid #d35400;
-  border-radius: 1rem;
-  cursor: pointer;
-  background-color: transparent;
-  color: #d35400;
-  transition: all 0.3s ease;
-  text-transform: capitalize;
-}
-
-.bottom-buttons button:hover {
-  background-color: #d35400;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(211, 84, 0, 0.3);
-}
-
-.bottom-buttons button:active {
-  transform: translateY(0);
-}
-
-@media (max-width: 1024px) {
-  .FirstPage {
-    padding: 1.5rem 1rem;
-  }
-
-  .generate-btn {
-    padding: 0.65rem 0.5rem;
-  }
-
-  .bottom-buttons {
-    gap: 0.75rem;
-  }
-
-  .bottom-buttons button {
-    padding: 0.65rem 0.5rem;
-  }
 }

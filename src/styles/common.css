@@ -1,0 +1,33 @@
+/* Common button styles */
+.btn {
+  padding: 0.75rem 0.5rem;
+  font-weight: 600;
+  border: 2px solid #d35400;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #d35400;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d35400;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 84, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* RTL text support */
+.rtl-text {
+  direction: rtl;
+  unicode-bidi: isolate;
+}
+
+/* Common background gradient */
+.catan-bg {
+  background: linear-gradient(135deg, #f5f0e1 0%, #e8dcc4 100%);
+}

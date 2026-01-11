@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import React, { type ReactNode, useCallback, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import './Carousel.css'
 
@@ -8,11 +8,27 @@ interface CarouselProps {
     loop?: boolean;
     align?: 'start' | 'center' | 'end';
   };
+  onSlideChange?: (index: number) => void;
 }
 
-export const Carousel: React.FC<CarouselProps> = ({ slides, options = { loop: true } }) => {
+export const Carousel: React.FC<CarouselProps> = ({ slides, options = { loop: true }, onSlideChange }) => {
 
-  const [emblaRef] = useEmblaCarousel(options)
+  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return
+    const index = emblaApi.selectedScrollSnap()
+    onSlideChange?.(index)
+  }, [emblaApi, onSlideChange])
+
+  useEffect(() => {
+    if (!emblaApi) return
+    onSelect()
+    emblaApi.on('select', onSelect)
+    return () => {
+      emblaApi.off('select', onSelect)
+    }
+  }, [emblaApi, onSelect])
 
   return (
     <div className="embla" ref={emblaRef}>

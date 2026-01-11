@@ -24,12 +24,12 @@ export default function Rules() {
   const pdfToShow: string = pdfFiles[lang] || pdfFiles["en"];
 
   return (
-    <div className="Rules">
+    <div className="Rules catan-bg">
       {isMobile ? (
         <div className="Rules-mobile-message">
           <div className="Rules-icon">📄</div>
-          <h2>{t("rules.mobileTitle")}</h2>
-          <p>{t("rules.mobileMessage")}</p>
+          <h2 className="rtl-text">{t("rules.mobileTitle")}</h2>
+          <p className="rtl-text">{t("rules.mobileMessage")}</p>
         </div>
       ) : (
         <div className="Rules-iframe-container">
@@ -43,12 +43,12 @@ export default function Rules() {
 
       <div className="Rules-buttons">
         <a href={pdfToShow} target="_blank" rel="noopener noreferrer">
-          <button className="Rules-btn">
+          <button className="Rules-btn btn">
             {t("rules.openPdf")}
           </button>
         </a>
         <a href={pdfToShow} download>
-          <button className="Rules-btn">
+          <button className="Rules-btn btn">
             {t("rules.downloadPdf")}
           </button>
         </a>

@@ -1,0 +1,7 @@
+{
+  "generate": {
+    "regenerateMap": "Перегенерировать",
+    "showNumbers": "Показать числа",
+    "hideNumbers": "Скрыть числа"
+  }
+}

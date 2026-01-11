@@ -1,0 +1,82 @@
+@import '../../../styles/common.css';
+
+.GeneratorMap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f5f0e1 0%, #e8dcc4 100%);
+  overflow: hidden;
+}
+
+.board-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40vw;
+}
+
+.hex-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -4.6vw;
+}
+
+.hex-tile {
+  position: relative;
+  width: 17vw;
+  height: 19.6vw;
+  margin: 0 0.4vw;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: #333;
+}
+
+.resource-image {
+  width: 101%;
+  height: 101%;
+  object-fit: cover;
+}
+
+.number-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 4.24vw;
+  height: 4.24vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.97rem, 2.42vw, 1.45rem);
+  font-weight: 800;
+  color: #2c3e50;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.number-circle.red-number {
+  color: #d32f2f;
+}
+
+.controls {
+  position: fixed;
+  bottom: clamp(2rem, 8vh, 6rem);
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.controls .btn {
+  min-width: clamp(120px, 30vw, 180px);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(0.75rem, 2vw, 1rem);
+}
